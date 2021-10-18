@@ -1,0 +1,37 @@
+[
+    {
+      "id": 1,
+      "fullName": "meha Jain",
+      "address": "kolar road",
+      "phoneNumber": "987689589",
+      "email": "mehajainee@gmail.com"
+    },
+    {
+      "id": 2,
+      "fullName": "abcd efgh",
+      "address": "qwert street",
+      "phoneNumber": "9874568769",
+      "email": "abcdqwert@gmail.com"
+    },
+    {
+      "id": 3,
+      "fullName": "qwerty poiuyt",
+      "address": "zxcvb road",
+      "phoneNumber": "9877897654",
+      "email": "waterabcd@gmail.com"
+    },
+    {
+      "id": 4,
+      "fullName": "xyz pqrs",
+      "address": "abcd street, road",
+      "phoneNumber": "9876786578",
+      "email": "qwerty123@gmail.com"
+    },
+    {
+      "id": 5,
+      "fullName": "pqrst xyz",
+      "address": "123 road street",
+      "phoneNumber": "9873468796",
+      "email": "pqrstxyz@gmail.com"
+    }
+  ]
