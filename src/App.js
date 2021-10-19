@@ -9,6 +9,8 @@ import { cols } from "./components/columns";
 
 const App = () => {
   const [contacts, setContacts] = useState(data);
+
+  const [q, setQ] = useState("");
   const [addFormData, setAddFormData] = useState({
     fullName: "",
     address: "",
@@ -119,13 +121,16 @@ const App = () => {
     setContacts(newContacts);
   };
 
+  function search(rows)  {
+    return rows.filter((row) => row.fullName.toLowerCase().indexOf(q) > -1);
+  }
   return (
     <div className="app-container">
      
 
  <CSVLink style ={{textAlign: "right"}} {...csvReport}>Export to CSV</CSVLink>
 
- 
+ <div><input type="text" value={q} onChange={(e) => setQ(e.target.value)} /></div>
       <form onSubmit={handleEditFormSubmit}>
         <table>
           <thead>
@@ -138,7 +143,7 @@ const App = () => {
             </tr>
           </thead>
           <tbody>
-            {contacts.map((contact) => (
+            {search(contacts).map((contact) => (
               <Fragment>
                 {editContactId === contact.id ? (
                   <EditableRow
