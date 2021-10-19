@@ -122,7 +122,10 @@ const App = () => {
   };
 
   function search(rows)  {
-    return rows.filter((row) => row.fullName.toLowerCase().indexOf(q) > -1);
+    return rows.filter((row) => row.fullName.toLowerCase().indexOf(q) > -1) ||
+    row.address.toLowerCase().indexOf(q) > -1 ||
+    row.phoneNumber.toLowerCase().indexOf(q) > -1 ||
+    row.email.toLowerCase().indexOf(q) > -1
   }
   return (
     <div className="app-container">
